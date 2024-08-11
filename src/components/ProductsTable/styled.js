@@ -6,6 +6,7 @@ export const ContainerProductsTable = styled.div`
     justify-content: center;
     align-items: center;
     overflow-x: auto;
+    margin-bottom: 5rem;
     width: 80%;
 
     input{

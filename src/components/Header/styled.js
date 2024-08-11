@@ -36,7 +36,7 @@ export const Nav = styled.nav`
         justify-content: right;
         text-align: center;
         font-size: 1.8rem;
-        gap: 0.5rem;
+        gap: 2rem;
     }
 
     .logout{

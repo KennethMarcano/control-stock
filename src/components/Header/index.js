@@ -52,7 +52,7 @@ export default function Header() {
                 {
                     isLoggedIn ?
                         <div className='logado'>
-                            <span> 🟢 </span>
+                            <FaUser color='#66BB6A' size={18} />
                             <FaWindowClose onClick={handleClick} className='logout' size={24} />
                         </div>
 

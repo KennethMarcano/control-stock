@@ -51,7 +51,7 @@ export default function ProductsTable({ produtos, handleDelete }) {
                                 <td className="price-stock">{produto.stock}</td>
                                 <td className="edit-delete">
                                     <Link to={`/produto/${produto.id}/edit`}>
-                                        <FaEdit size={18} />
+                                        <FaEdit color="blue" size={18} />
                                     </Link>
                                     <Link onClick={(e) => handleDelete(e, index, produto.id, produto.name)} to={`/produto/${produto.id}/delete`}>
                                         <FaWindowClose size={18} />

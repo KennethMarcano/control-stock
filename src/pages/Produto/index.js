@@ -102,6 +102,7 @@ export default function Produto({ match }) {
         <ContainerProduto>
             <h1>{id ? 'Editar produto' : 'Cadastrar Produto'}</h1>
             <form onSubmit={handleSubmit}>
+                <label>Nome</label>
                 <input
                     type="text"
                     value={produto.name}
@@ -113,6 +114,7 @@ export default function Produto({ match }) {
                 >
                 </input>
 
+                <label>Descrição</label>
                 <input
                     type="text"
                     value={produto.description}
@@ -124,6 +126,7 @@ export default function Produto({ match }) {
                 >
                 </input>
 
+                <label>Preço</label>
                 <input
                     type="number"
                     min="0.01"
@@ -137,6 +140,7 @@ export default function Produto({ match }) {
                 >
                 </input>
 
+                <label>Stock</label>
                 <input
                     type="number"
                     min="0"

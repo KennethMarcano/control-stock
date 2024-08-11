@@ -25,7 +25,6 @@ export default function Header() {
             {
                 isLoggedIn &&
                 <div className='home-search'>
-
                     <Link to="/home">
                         <FaHome size={18} />
                     </Link>
@@ -35,11 +34,7 @@ export default function Header() {
                     </Link>
 
                     <Link onClick={() => { history.push('/produto') }} to="/produto">
-                        Cadastrar produto
-                    </Link>
-
-                    <Link to="/procurar">
-                        Procurar produto
+                        Cadastrar
                     </Link>
                 </div>
             }
@@ -58,10 +53,7 @@ export default function Header() {
                     isLoggedIn ?
                         <div className='logado'>
                             <span> 🟢 </span>
-
-                            <Link onClick={handleClick} to='/logout'>
-                                <FaWindowClose size={24} />
-                            </Link>
+                            <FaWindowClose onClick={handleClick} className='logout' size={24} />
                         </div>
 
                         :

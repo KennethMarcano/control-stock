@@ -4,14 +4,15 @@ export const ContainerProduto = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     padding: 20px 30px;
     background: #fff;
 
     form {
+        padding-top: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
         input {
             min-width: 20vw;

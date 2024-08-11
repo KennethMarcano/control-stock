@@ -35,11 +35,13 @@ export const Nav = styled.nav`
     .logado {
         justify-content: right;
         text-align: center;
+        font-size: 1.8rem;
+        gap: 0.5rem;
     }
 
-    span {
-            font-size: 1.8rem;
-        }
-    
+    .logout{
+        color: #fff;
+        cursor: pointer;
+    }
 
 `;

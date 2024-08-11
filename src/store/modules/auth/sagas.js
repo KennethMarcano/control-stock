@@ -64,6 +64,7 @@ function persistRehydrate({ payload }) {
     const token = get(payload, 'auth.token', '');
     if(!token) return;
     axios.defaults.headers.Authorization = `Bearer ${token}`;
+    history.push('/produtos');
 }
 
 export default all([

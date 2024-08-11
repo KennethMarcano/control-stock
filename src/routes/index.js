@@ -5,7 +5,6 @@ import MyRoute from './MyRoutes';
 import Login from '../pages/Login';
 import Produtos from '../pages/Produtos';
 import Produto from '../pages/Produto';
-import ProcurarProduto from '../pages/ProcurarProduto';
 import Page404 from '../pages/Page404';
 import Register from '../pages/Register';
 import Home from '../pages/Home'
@@ -20,7 +19,6 @@ export default function Routes() {
                 <MyRoute exact path="/home" isClosed component={Home}/>
                 <MyRoute exact path="/produto/:id/edit" isClosed component={Produto}/>
                 <MyRoute exact path="/produto" isClosed component={Produto}/>
-                <MyRoute exact path="/procurar" isClosed component={ProcurarProduto}/>
                 <MyRoute path="*" component={Page404}/>
             </Switch>
     );

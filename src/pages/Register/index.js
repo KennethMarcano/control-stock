@@ -19,10 +19,19 @@ export default function Register() {
 
     async function handleSubmit(e) {
         e.preventDefault();
+        toast.dismiss();
         let errorForm = false;
         if (name.length < 1) {
             errorForm = true;
             toast.error('Campo nome não pode estar vazio');
+        }
+        if(taxNumber.length < 11) {
+            errorForm = true;
+            toast.error('O campo CPF precisa ter pelo menos 11 digitos')
+        }
+        if(!(/^\d+$/.test(taxNumber))) {
+            errorForm = true;
+            toast.error('O campo CPF precisa ser só numeros')
         }
         if (!validator.isEmail(mail)) {
             errorForm = true;
@@ -48,22 +57,25 @@ export default function Register() {
             <ContainerRegister>
                 <h1>Crie sua conta</h1>
                 <form onSubmit={handleSubmit}>
+                    <label>Nome</label>
                     <input
                         type="text"
                         value={name}
-                        placeholder="Name"
+                        placeholder="Nome"
                         onChange={(e) => setName(e.target.value)}
                     >
                     </input>
 
+                    <label>CPF</label>
                     <input
                         type="text"
                         value={taxNumber}
-                        placeholder="CPF ou CNPJ"
+                        placeholder="CPF"
                         onChange={(e) => setTaxNumber(e.target.value)}
                     >
                     </input>
 
+                    <label>Email</label>
                     <input
                         type="email"
                         value={mail}
@@ -72,6 +84,7 @@ export default function Register() {
                     >
                     </input>
 
+                    <label>Celular</label>
                     <input
                         type="text"
                         value={phone}
@@ -80,6 +93,7 @@ export default function Register() {
                     >
                     </input>
 
+                    <label>Senha</label>
                     <input
                         type="password"
                         value={password}

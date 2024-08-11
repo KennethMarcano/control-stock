@@ -4,13 +4,17 @@ export const ContainerProductsTable = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     overflow-x: auto;
+    width: 80%;
 
+    input{
+        width: 35rem;
+    }
     table {
+        white-space: nowrap;
         border-collapse: collapse;
         table-layout: auto;
-        min-width: 60vw;
-        max-width: 90vw;
     }
     th, td {  
             border: 0.1rem solid #ccc;  
@@ -22,21 +26,25 @@ export const ContainerProductsTable = styled.div`
             background-color: #f4f4f4;  
         }
 
+    .ferts {
+        width: 10rem;
+    }
+
     .price-stock {
         width: 10rem;
     }
 
     .name {
-        width: 25rem;
+        width: 22rem;
+    }
+
+    .description {
+        width: 50rem;
     }
 
     .edit-delete {
         display: flex;
         gap: 1rem;
         border: none;
-    }
-
-    .ferts {
-        width: 10rem;
     }
 `;

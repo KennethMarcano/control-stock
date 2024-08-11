@@ -17,11 +17,15 @@ export default function Login(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        toast.dismiss();
         let errorForm = false;
-        if(taxNumber < 11)
-        {
+        if(taxNumber.length < 11) {
             errorForm = true;
-            toast.error('O campo taxNumber senha precisa ter pelo menos 11 caracteres')
+            toast.error('O campo CPF precisa ter pelo menos 11 digitos')
+        }
+        if(!(/^\d+$/.test(taxNumber))) {
+            errorForm = true;
+            toast.error('O campo CPF precisa ser só numeros')
         }
         if(password.length < 6) {
             errorForm = true;
@@ -38,16 +42,16 @@ export default function Login(props) {
             <ContainerLogin>
                 <h1>Entrar</h1>
                 <form onSubmit={handleSubmit}>
-                    
+                    <label>CPF</label>
                     <input 
                     type="text" 
                     value={taxNumber} 
-                    placeholder="CPF ou CNPJ"
+                    placeholder="CPF"
                     onChange={(e) => setTaxNumber(e.target.value)}
                     >
                     </input>
 
-    
+                    <label>Senha</label>
                     <input 
                     type="password" 
                     value={password} 

@@ -10,9 +10,14 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html {
+        font-size: 62.5%;
+    }
+
     body {
+        font-size: 1.6rem;
         font-family: sans-serif;
-        background: ${colors.primaryDarkColor};
+        background: #fff;
     }
 
     html, body, #root {
@@ -20,21 +25,21 @@ export default createGlobalStyle`
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 2.5rem;
     }
     
     label {
-        font-size: 12.5px;
+        font-size: 1.25rem;
     }
+
     button {
         cursor: pointer;
-        max-width: 100px;
         background: ${colors.primaryColor};
         color: #fff;
         border: none;
-        border-radius: 3px;
+        border-radius: 0.3rem;
         font-weight: 600;
-        padding: 10px;
+        padding: 1rem;
     }
 
     a {
@@ -46,13 +51,26 @@ export default createGlobalStyle`
         list-style: none;
     }
 
+    input {
+        margin: 1.5rem 0;
+        padding: 0.8rem 0;
+        text-align: center;
+        border: 0.1rem solid #bebebe;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        &:focus{
+            border: 0.2rem solid ${colors.primaryColor};
+        }
+    }
+
 
 `;
 
-export const Container = styled.section `
-   max-width: 70vw;
-    margin: 40px auto;
+export const Container = styled.section`
+    width: 40rem;
+    margin: 5rem auto;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    padding: 3rem 0;
 `

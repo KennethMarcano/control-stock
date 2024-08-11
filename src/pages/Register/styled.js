@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as colors from '../../config/colors'
+//import * as colors from '../../config/colors'
 
 export const ContainerRegister = styled.div`
  h1 {
@@ -14,15 +14,6 @@ export const ContainerRegister = styled.div`
 
         input {
             width: 70%;
-            margin: 15px 0;
-            padding: 8px 0;
-            text-align: center;
-            border: 1px solid #bebebe;
-            border-radius: 5px;
-            font-size: 15px;
-            &:focus{
-                border: 2px solid ${colors.primaryColor};
-            }
         }
 
         button {

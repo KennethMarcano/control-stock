@@ -49,19 +49,13 @@ function* registerRequest({ payload }) {
 
     } catch (e) {
         const errors = get(e, 'response.data.message', []);
-        const status = get(e, 'response.status', 0);
+        const status = get(e, 'response.data.statusCode', 0);
         toast.dismiss();
         yield put(actions.registerFailure());
         if(status === 400){
-            toast.error('Usuário já cadastrado');
-            return
-        }
-        if(errors.length > 0){
             errors.map(error => toast.error(error));
-        } else {
-            toast.error('Error desconhecido');
-        }
-
+        }  
+        toast.error(errors)
     }
 
 }

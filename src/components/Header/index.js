@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHome, FaSignInAlt, FaUser, FaWindowClose, FaSearch } from 'react-icons/fa'
+import { FaHome, FaSignInAlt, FaUser, FaWindowClose } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
@@ -30,8 +30,16 @@ export default function Header() {
                         <FaHome size={18} />
                     </Link>
 
-                    <Link to="/produto">
-                        <FaSearch size={18} />
+                    <Link to="/produtos">
+                        Produtos
+                    </Link>
+
+                    <Link onClick={() => { history.push('/produto') }} to="/produto">
+                        Cadastrar produto
+                    </Link>
+
+                    <Link to="/procurar">
+                        Procurar produto
                     </Link>
                 </div>
             }
@@ -48,9 +56,14 @@ export default function Header() {
 
                 {
                     isLoggedIn ?
-                        <Link onClick={handleClick} to='/logout'>
-                            <FaWindowClose size={24} />
-                        </Link>
+                        <div className='logado'>
+                            <span> 🟢 </span>
+
+                            <Link onClick={handleClick} to='/logout'>
+                                <FaWindowClose size={24} />
+                            </Link>
+                        </div>
+
                         :
                         <Link to="/">
                             <FaSignInAlt size={22} />

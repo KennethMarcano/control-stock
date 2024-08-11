@@ -8,31 +8,38 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
 
-    .home-search {
+    div {
         display: flex;
-        color: #fff;
         width: 100%;
-        display: flex;
         align-items: center;
+    }
 
-      a {
+    .home-search {
+        color: #fff;
+    }
+
+    a {
         color: #fff;
         margin: 0 10px;
     }
+
+    a:hover {
+      text-decoration: underline;
     }
 
 
     .user-close {
-        width: 100%;
-        display: flex;
-        align-items: center;
         justify-content: end;
-
-      a {
-        color: #fff;
-        margin: 0 10px;
     }
 
+    .logado {
+        justify-content: right;
+        text-align: center;
     }
+
+    span {
+            font-size: 1.8rem;
+        }
+    
 
 `;

@@ -3,33 +3,29 @@
 Aplicação frontend para o teste tecnico usando a API:  
 https://interview.t-alpha.com.br
 
-É necessario ter um cadastro valido para acessa ao sistema completo, por isso foi colocada uma opção para se cadastrar no sistema e assim fazer login.
+É necessário ter um cadastro válido para acessar o sistema completo, por isso foi colocada uma opção para se cadastrar no sistema e assim fazer login.
 
-En este sistema cada usuario tem sua propia lista de produtos, então é possivel criar, editar e apagar os produtos sem afetar os outro usuarios.
+Neste sistema, cada usuário tem sua própria lista de produtos, então é possível criar, editar e apagar os produtos sem afetar os outros usuários.
 
-Alem de criar, deletar e apagar os produtos é possivel fazer uma busqueda pelo nombre do produto.
+Além de criar, deletar e apagar os produtos, é possível fazer uma busca pelo nome do produto.
 
-### INSTALAÇÃO
-
+INSTALAÇÃO
 Precisa ter Node.js instalado para executar essa aplicação frontend.
 
-Depois de ter clonado o projeto abre a pasta do projeto no terminal e instala as dependencias com:
-'npm install'
+Depois de ter clonado o projeto, abra a pasta do projeto no terminal e instale as dependências com: npm install.
 
-Para executar de forma local solo é necessario executar o comando: 'npm start'.
+Para executar de forma local, só é necessário executar o comando: npm start.
 
-A primeira pagina sera a parte de Login, se não tiver cadastro tem uma Navbar com 2 opções, uma para
-se cadastrar no sistema e outra para fazer login.
+A primeira página será a parte de Login. Se não tiver cadastro, há uma Navbar com duas opções: uma para se cadastrar no sistema e outra para fazer login.
 
-Uma vez feito login, é possivel olhar os produtos do usuario criado, se o usuario é novo não vai ter
-nehum producto. Na navbar estão as opções:
+Uma vez feito login, é possível olhar os produtos do usuário criado. Se o usuário for novo, não vai ter nenhum produto. Na Navbar estão as opções:
 
--'Produtos': Tabua com todos os produtos cadastrados onde cada produto tem 2 botões um para editar e outro para apagar e encima da tabua tem um input para procurar o produto pelo nome. 
--'Cadastrar': Tem um formulario para cadastrar um produto novo, ao momento de cadastrar se o produto já existe ele não deixa cadastrar.
+Produtos: Tabela com todos os produtos cadastrados, onde cada produto tem dois botões: um para editar e outro para apagar. Acima da tabela, há um input para procurar o produto pelo nome.
 
-Alem dassas opções tem mais 2 icones no navbar: um icone de User na cor verde para indicar que esta dentro do sistema e uma 'X' que é para fazer logout.
+Cadastrar: Tem um formulário para cadastrar um produto novo. No momento de cadastrar, se o produto já existir, ele não deixa cadastrar.
+Além dessas opções, há mais dois ícones na Navbar: um ícone de usuário na cor verde para indicar que está dentro do sistema e um 'X' que é para fazer logout.
 
-Aas rotas são fechadas e precisan de login!!!!
+As rotas são fechadas e precisam de login!
 
 ## ESTRUTURA DO PROJETO
 

@@ -1,6 +1,6 @@
 # TEST T-ALPHA
 
-Aplicação frontend para o teste tecnico usando a API:  
+Aplicação frontend usando a API:  
 https://interview.t-alpha.com.br
 
 É necessário ter um cadastro válido para acessar o sistema completo, por isso foi colocada uma opção para se cadastrar no sistema e assim fazer login.
